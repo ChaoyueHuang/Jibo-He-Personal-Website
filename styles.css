@@ -578,10 +578,9 @@ h3 {
   .title-img {
     display: none;
     visibility: hidden;
-    /* width: 50%; */
   }
 
   .title-text-section {
-    margin-bottom: 200px;
+    height: 700px;
   }
 }
