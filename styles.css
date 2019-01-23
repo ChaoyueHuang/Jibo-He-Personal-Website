@@ -1,0 +1,587 @@
+/* Globle Setting */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #44566C;
+  word-spacing: 0.1rem;
+}
+
+p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.viewmore {
+  margin-top: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4rem;
+}
+
+.arrow {
+  margin-right: 1rem;
+}
+
+.viewmore:hover {
+  background-color: #6B76FF;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.04), 0 17px 50px 0 rgba(0, 0, 0, 0.09);
+}
+
+.viewmore-section {
+  text-align: center;
+}
+
+/* Header Style */
+.color {
+  background-color: #E9F1FE;
+}
+
+.container-fluid {
+  padding: 1.5rem 17% 0 15%;
+}
+
+.title-img-section {
+  padding-left: 100px;
+}
+
+.title-text-section {
+  padding-left: 0;
+  text-align: center;
+}
+
+.title-img {
+  width: 503px;
+  margin-top: 1rem;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0.25rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #44566C;
+}
+
+.title-text {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  line-height: 3.2;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+.icon-play {
+  margin-top: 4rem;
+  color: #6B76FF;
+}
+
+.icon-play:hover {
+  color: #fff;
+}
+
+/* Video Part */
+.vid {
+  z-index: 0;
+  position: absolute;
+  background-color: black;
+  margin-right: 10%;
+}
+
+#yt {
+  display: none;
+}
+
+.header-video {
+  text-align: left;
+}
+
+/* Personal Info */
+.personal-info {
+  padding: 7rem 17% 0 17%;
+}
+
+.description {
+  padding-top: 4.4rem;
+  padding-right: 3rem;
+  padding-left: 0;
+}
+
+.specialties {
+  margin-top: 4.4rem;
+  padding-left: 1rem;
+}
+
+.specialties h2 {
+  margin-bottom: 2rem;
+}
+
+.specialties-section p {
+  text-align: center;
+  background-color: #6B76FF;
+  color: #fff;
+  padding: 4px;
+}
+
+.personal-info h1 {
+  margin-bottom: 3rem;
+}
+
+.personal-info .name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.personal-info .title {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.personal-info .university {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Experience */
+#experience {
+  max-height: 480px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#experience.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+.experience h1 {
+  margin-bottom: 3rem;
+}
+
+.experience h2 {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.experience span {
+  font-size: 0.8125rem;
+}
+
+.experience p {
+  margin-top: 0.5rem;
+}
+
+.experience-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.experience {
+  padding: 6rem 17% 0 17%;
+}
+
+.wsu-img {
+  background-image: url("images/wsu.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+.ibeehub-img {
+  background-image: url("images/ibeehub.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+.uiuc-img {
+  background-image: url("images/uiuc.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+.sr-img {
+  background-image: url("images/SR.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+.pku-img {
+  background-image: url("images/pku.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+.ms-img {
+  background-image: url("images/microsoft.png");
+  background-repeat: no-repeat;
+  background-size: 96px;
+  background-position: right top;
+}
+
+/* Education */
+.education h1 {
+  margin-bottom: 3rem;
+}
+
+.education h2 {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.education span {
+  font-size: 0.8125rem;
+}
+
+.education p {
+  margin-top: 0.5rem;
+}
+
+.education-major {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.education {
+  padding: 3.5rem 17% 0 17%;
+}
+
+.first-date {
+  display: block;
+}
+
+/* Expertise */
+.expertise {
+  padding: 3rem 17% 0 17%;
+}
+
+#expertise h1 {
+  padding: 6rem 17% 0 17%;
+}
+
+.expertise-title {
+  margin-bottom: 2rem;
+}
+
+.programming, .statistics, .ux, .ui {
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: -8px 12px 18px #dedede;
+}
+
+/* Research Interests */
+.research {
+  padding: 3rem 17% 0 17%;
+  margin-bottom: 3rem;
+}
+
+.research span {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #44566C;
+}
+
+.research i {
+  color: #6B76FF;
+  margin-right: 0.5rem;
+}
+
+#research h1 {
+  padding: 6rem 17% 0 17%;
+}
+
+.block {
+  margin-bottom: 3rem;
+}
+
+/* Patents */
+.patents {
+  padding: 3rem 17% 0 17%;
+}
+
+#patents h1 {
+  padding: 3rem 17% 0 17%;
+  color: #fff;
+}
+
+#patents h2 {
+  color: #fff;
+}
+
+#patents p {
+  color: #fff;
+  /* font-weight: 600; */
+  font-size: 1rem;
+}
+
+.test {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-width: 0.25rem;
+  border-color: #fff;
+  margin: 0 1rem;
+  padding: 2rem 1rem;
+}
+
+.slidecolor {
+  background-color: #ffa952;
+}
+
+.pre-icon {
+  color: #333333;
+}
+
+.slidepadding {
+  padding-bottom: 6rem;
+}
+
+/* Funding */
+#funding {
+  max-height: 477px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#funding.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+.funding {
+  padding: 6rem 30% 0 17%;
+}
+
+.funding h1 {
+  margin-bottom: 3rem;
+}
+
+.funding span {
+  font-weight: 600;
+}
+
+/* Slected Awards */
+.awards {
+  padding: 3rem 17% 0 17%;
+  text-align: center;
+}
+
+.awards h2 {
+  margin-bottom: 1rem;
+  color: #44566C;
+}
+
+.fa-medal {
+  color: #FFA953;
+  margin-bottom: 1rem;
+}
+
+#awards h1 {
+  padding: 3.5rem 17% 0 17%;
+}
+
+.awards .row-2 {
+  margin-top: 4rem;
+}
+
+/* Courses */
+#courses h1 {
+  padding: 6rem 17% 0 17%;
+}
+
+.courses {
+  padding: 3rem 17% 0 17%;
+}
+
+.courses h2 {
+  text-align: center;
+  color: #fff;
+  background-color: #6B76FF;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.graduate {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-width: 0.25rem;
+  border-color: #6B76FF;
+  margin: 0 10% 2rem 30%;
+  padding: 2rem;
+}
+
+.undergraduate {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-width: 0.25rem;
+  border-color: #6B76FF;
+  margin: 0 30% 2rem 10%;
+  padding: 2rem;
+}
+
+/* Contact */
+#contact h1 {
+  padding: 6rem 17% 0 17%;
+}
+
+.contact {
+  padding: 3rem 17% 4% 17%;
+}
+
+.contact i {
+  margin-top: 0.3rem;
+  float: left;
+}
+
+.contact p {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+/* Footer */
+.background {
+  height: 8rem;
+  text-align: center;
+  background-color: #6B76FF;
+  padding: 4rem;
+}
+
+.background p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Publications */
+.refereed-journal, .manuscript, .refereed-proceedings, .conference-abstracts,
+.book-chapters, .technical-reports {
+  padding: 3.5rem 30% 0 17%;
+}
+
+.refereed-journal h1, .manuscript h1, .refereed-proceedings h1,
+.conference-abstracts h1, .book-chapters h1, .technical-reports h1 {
+  margin-bottom: 3rem;
+}
+
+.technical-reports {
+  margin-bottom: 4%;
+}
+
+.align-left {
+  text-align: left;
+  padding-left: 17%;
+}
+/* refereed-journal */
+#refereed-journal {
+  max-height: 460px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#refereed-journal.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+/* manuscript */
+#manuscript {
+  max-height: 400px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#manuscript.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+/* refereed-proceedings */
+#refereed-proceedings {
+  max-height: 454px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#refereed-proceedings.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+/* conference-abstracts */
+#conference-abstracts {
+  max-height: 454px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+#conference-abstracts.open {
+  max-height: 1000px;
+  -webkit-transition: max-heigth 0.7s;
+  -moz-transition: max-heigth 0.7s;
+  transition: max-heigth 0.7s;
+}
+
+@media (max-width:1200px) {
+  .title-img {
+    display: none;
+    visibility: hidden;
+    /* width: 50%; */
+  }
+
+  .title-text-section {
+    margin-bottom: 200px;
+  }
+}
